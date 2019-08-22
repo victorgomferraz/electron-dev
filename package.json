@@ -1,0 +1,25 @@
+{
+  "name": "electron-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorgomferraz/electron-dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorgomferraz/electron-dev/issues"
+  },
+  "homepage": "https://github.com/victorgomferraz/electron-dev#readme",
+  "dependencies": {
+    "dotenv": "~8.1.0",
+    "electron": "~6.0.3",
+    "electron-debug": "^3.0.1"
+  }
+}
