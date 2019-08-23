@@ -13,6 +13,10 @@ const PORT = process.env.PORT;
 function createWindow() {
   mainWindow = new BrowserWindow({width: 900, height: 680, fullscreen: true});
   mainWindow.loadURL(`http://${IP}:${PORT}`);
+  mainWindow.webContents.on('did-finish-load', async () => {
+    console.log('Page was saved successfully.');
+    mainWindow.webContents.enableDeviceEmulation({screenPosition: 'mobile'});
+  });
   mainWindow.on('closed', () => mainWindow = null);
 }
 
